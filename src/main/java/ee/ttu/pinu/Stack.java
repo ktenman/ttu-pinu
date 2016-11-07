@@ -9,9 +9,9 @@ public class Stack {
 		return list.size() == 0;
 	}
 
-	public Object push(Object item) {
-		list.add(item);
-		return item;
+	public Object push(Object object) {
+		list.add(object);
+		return object;
 	}
 
 	public Object pop() {
