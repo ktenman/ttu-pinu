@@ -2,19 +2,19 @@ package ee.ttu.pinu;
 
 import java.util.ArrayList;
 
-public class Stack {
-	ArrayList<Object> list = new ArrayList<Object>();
+class Stack {
+	private final ArrayList<Object> list = new ArrayList<Object>();
 
-	public boolean empty() {
+	boolean empty() {
 		return list.size() == 0;
 	}
 
-	public Object push(Object object) {
+	Object push(Object object) {
 		list.add(object);
 		return object;
 	}
 
-	public Object pop() {
+	Object pop() {
 		Object object = peek();
 		if (object != null) {
 			list.remove(list.size() - 1);
@@ -22,7 +22,8 @@ public class Stack {
 		return object;
 	}
 
-	public Object peek() {
+	Object peek() {
 		return empty() ? null : list.get(list.size() - 1);
 	}
+
 }
