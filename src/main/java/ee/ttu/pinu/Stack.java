@@ -25,5 +25,4 @@ class Stack {
 	Object peek() {
 		return empty() ? null : list.get(list.size() - 1);
 	}
-
 }
