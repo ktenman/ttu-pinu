@@ -3,7 +3,7 @@ package ee.ttu.pinu;
 import java.util.ArrayList;
 
 class Stack {
-	private final ArrayList<Object> list = new ArrayList<Object>();
+	private ArrayList<Object> list = new ArrayList<Object>();
 
 	boolean empty() {
 		return list.size() == 0;
